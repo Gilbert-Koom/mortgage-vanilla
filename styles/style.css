@@ -30,6 +30,12 @@ input[type=number], button {
   width: 90%;
 }
 
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .error {
   display: block;
 }
@@ -49,6 +55,68 @@ label {
   display: block;
 }
 
-#amount {
+.no1 {
+  position: relative;
+  display: inline-block;
+}
+
+.no1 input {
+  padding-right: 40px;
+}
+
+.no1 p {
+  position: absolute;
+  margin-right: 5px;
+  top: 0px;
+  left: 0;
+  border: none;
+  background-color: blue;
+  display: flex;
+}
+
+.no2 {
+  position: relative;
+  display: inline-block;
+}
+
+.no2 input {
+  padding-right: 40px;
+}
+
+.no2 p {
+  position: absolute;
+  top: 1px;
+  right: 20px;
+  border: none;
   background-color: green;
+  cursor: pointer;
+}
+
+.no3 {
+  position: relative;
+  display: inline-block;
+}
+
+.no3 input {
+  padding-right: 40px;
+}
+
+.no3 p {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  border: none;
+  background-color: green;
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .form-and-other {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #mortgage-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }/*# sourceMappingURL=style.css.map */
