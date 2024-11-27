@@ -1,1 +1,54 @@
-/*# sourceMappingURL=style.css.map */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.app {
+  width: 100%;
+}
+
+input[type=number], button {
+  width: 90%;
+}
+
+.error {
+  display: block;
+}
+
+.mainContainer {
+  background-color: #133041;
+}
+
+.has-solid-border {
+  border: solid;
+  border-color: rgb(133, 133, 133);
+  width: 90%;
+  margin-top: 1.5em;
+}
+
+label {
+  display: block;
+}
+
+#amount {
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */

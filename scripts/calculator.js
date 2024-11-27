@@ -19,7 +19,12 @@ function calculator() {
 		const totalMortgage=yearly.toFixed(2)
 		console.log(monthlyMortgage,totalMortgage)
 		mRepayment.textContent = `${monthlyMortgage}`;
-		tRepayment.textContent= `${totalMortgage}`
+		tRepayment.textContent= `${totalMortgage}`;
+		mRepayment.scrollIntoView();
+		const empty=document.getElementById('empty');
+		const completed=document.getElementById('completed');
+		empty.style.display = "none";
+		completed.style.display='initial'
 
 		
 
@@ -28,7 +33,7 @@ else{
 	const interestonly=(Number(mortgageAmount)*Number(mortgageTerm)*Number(interestRate))/100
 	mRepayment.textContent=''
 	tRepayment.textContent=interestonly
-	
+	tRepayment.scrollIntoView()
 
 }
 }

@@ -1,0 +1,64 @@
+$white: #ffffff;
+$lime: #d8db2f;
+$slate-900: #133041;
+$slate-700: #4e6e7e;
+$slate-500: #6b94a8;
+$slate-300: #9abed5;
+$slate-100: #e4f4fd;
+$red: #d73328;
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, p{
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+body{
+	background-color: $white;
+}
+.app{
+	width: 100%;
+
+}
+
+input[type="number"],button{
+	width: 90%;
+}
+
+
+.error{
+	display: block;
+}
+.mainContainer{
+	background-color: $slate-900;
+}
+
+.has-solid-border{
+	border: solid;
+	border-color: rgb(133, 133, 133);
+	width: 90%;
+	margin-top: 1.5em;
+	
+}
+label{
+	display: block;
+}
+#amount{
+	background-color: green;
+}
+
