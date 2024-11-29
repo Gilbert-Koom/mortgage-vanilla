@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Mortgage repayment calculator</title>
 </head>
@@ -10,15 +13,17 @@
 
 	<div class="app">
 		<div class="form-and-other">
+			
 			<form action="" id="myForm">
 				<h1>mortgage calculator</h1>
-				<button onclick="clearAll()">clear all</button>
+				<button onclick="clearAll()" class="first_button">clear all</button>
+				
 				<div class="same-group">
 					<div class="form-control" id="first">
 						<label for="mortgage-amount">Mortgage Amount</label>
 						<div class="no1">
 							<input type="number" id="amount" name="firstNumber" step="any">
-							<p id="amountbg">$</p>
+							<p id="amountbg"><img src="images/Prefix.png" alt=""></p>
 						</div>
 						<small class="error" id="amount-error"></small>
 					</div>
@@ -26,7 +31,7 @@
 						<label for="mortgage-term">Mortgage Term</label>
 						<div class="no2">
 							<input type="number" id="term" name="lastNumber" step="any">
-							<p id="termbg">years</p>
+							<p id="termbg"><img src="images/Suffix (1).png" alt=""></p>
 						</div>
 						<small class="error" id="term-error"></small>
 					</div>
@@ -34,7 +39,7 @@
 						<label for="lastName">Interest Rate</label>
 						<div class="no3">
 							<input type="number" id="interest" name="lastNumber" step="any">
-							<p id="interestbg">%</p>
+							<p id="interestbg"><img src="images/Suffix.png" alt=""></p>
 						</div>
 						<small class="error" id="interest-error"></small>
 					</div>
@@ -53,7 +58,7 @@
 					<small class="error" id="type-error"></small>
 					
 				</div>
-				<button onclick="formValidator()"> <img src="images/icon-calculator.svg" alt=""> <p>Calculate Repayment</p> </button>
+				<button onclick="formValidator()" class="second_button"> <img src="images/icon-calculator.svg" alt=""> <p>Calculate Repayment</p> </button>
 	
 					
 			</form>
@@ -61,14 +66,14 @@
 			<div class="mainContainer">
 				<div class="initial-container" id="empty">
 					<img src="images/illustration-empty.svg" alt="">
-					<p>results shown here</p>
-					<p>complete the form and click "calculate repayment" to see what your monthly repayment would be</p>
+					<p class="p1">Results shown here</p>
+					<p class="p2">complete the form and click "calculate repayment" to see what your monthly repayment would be</p>
 					
 				</div>
 				<div class="result_container" id="completed" style="display: none;">
-					<p>Your results</p>
-					<p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click "calculate repayment" again</p>
-					<div>
+					<p class="firstp">Your results</p>
+					<p class="secondp">Your results are shown below based on the information you provided. To adjust the results, edit the form and click "calculate repayment" again</p>
+					<div class="calculated_results">
 						<p>Your monthly repayments</p>
 						<p class="monthly_repayment" id="monthly_repayment"></p>
 						<p>Total you"ll repay over the term</p>

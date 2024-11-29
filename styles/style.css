@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 *, *:before, *:after {
@@ -16,6 +16,7 @@ body, h1, p {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 body {
@@ -26,42 +27,126 @@ body {
   width: 100%;
 }
 
-input[type=number], button {
-  width: 90%;
+input[type=number] {
+  width: 100%;
+  height: 48px;
+  border-color: #6b94a8;
 }
 
-button {
+.second_button {
+  height: 56px;
+  border-radius: 996px;
+  border: none;
+  color: #133041;
+  background-color: #d8db2f;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 90%;
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: -1px;
+  font-weight: bold;
 }
 
 .error {
   display: block;
 }
 
+#myForm h1 {
+  color: #133041;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+#myForm .first_button {
+  color: #4e6e7e;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: 500;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+}
+
 .mainContainer {
   background-color: #133041;
 }
+.mainContainer .initial-container .p1 {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+.mainContainer .initial-container .p2 {
+  color: #9abed5;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+.mainContainer .result_container .firstp {
+  color: white;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+.mainContainer .result_container .secondp {
+  color: #9abed5;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+.mainContainer .result_container .calculated_results {
+  background-color: #133041;
+}
+.mainContainer .initial-container p {
+  text-align: center;
+}
+.mainContainer .initial-container img {
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .has-solid-border {
+  display: flex;
+  align-items: center;
   border: solid;
-  border-color: rgb(133, 133, 133);
+  border-color: #6b94a8;
+  height: 48px;
   width: 90%;
   margin-top: 1.5em;
+  color: #133041;
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: -1px;
+  font-weight: bold;
 }
 
 label {
   display: block;
+  color: #4e6e7e;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: 500;
 }
 
 .no1 {
   position: relative;
   display: inline-block;
+  width: 90%;
 }
 
 .no1 input {
-  padding-right: 40px;
+  padding-left: 80px;
 }
 
 .no1 p {
@@ -69,14 +154,20 @@ label {
   margin-right: 5px;
   top: 0px;
   left: 0;
+  width: 10%;
+  height: 48px;
   border: none;
-  background-color: blue;
-  display: flex;
+  padding-top: 18px;
+  background-color: #e4f4fd;
+}
+.no1 p img {
+  margin: auto;
 }
 
 .no2 {
   position: relative;
   display: inline-block;
+  width: 90%;
 }
 
 .no2 input {
@@ -84,17 +175,23 @@ label {
 }
 
 .no2 p {
+  padding-top: 18px;
   position: absolute;
-  top: 1px;
-  right: 20px;
+  top: 0px;
+  right: 0px;
   border: none;
-  background-color: green;
-  cursor: pointer;
+  height: 48px;
+  width: 30%;
+  background-color: #e4f4fd;
+}
+.no2 p img {
+  margin: auto;
 }
 
 .no3 {
   position: relative;
   display: inline-block;
+  width: 90%;
 }
 
 .no3 input {
@@ -102,12 +199,17 @@ label {
 }
 
 .no3 p {
+  padding-top: 18px;
   position: absolute;
   top: 0px;
-  right: 20px;
+  right: 0px;
   border: none;
-  background-color: green;
-  cursor: pointer;
+  width: 20%;
+  background-color: #e4f4fd;
+  height: 48px;
+}
+.no3 p img {
+  margin: auto;
 }
 
 @media (min-width: 700px) {
