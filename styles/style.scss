@@ -163,7 +163,34 @@ input[type="number"]{
 
 		}
 		.calculated_results{
-			background-color: $slate-900;
+			background-color: hsla(0, 0%, 0%, 0.25);
+			border-radius: 8px;
+			box-shadow: 0px -11px 0px 0px $lime;
+			-webkit-box-shadow: 0px -11px 0px 0px $lime;
+			-moz-box-shadow: 0px -11px 0px 0px $lime;
+			.same-text{
+				color: $slate-300;
+				font-size: map-get($preset4, 'size' );
+				line-height: map-get($preset4, 'height' );
+				letter-spacing: map-get($preset4, 'spacing' );
+				font-weight: map-get($preset4, 'weight' );
+
+			}
+			.monthly_repayment{
+				color: $lime;
+				font-size: map-get($preset1, 'size' );
+				line-height: map-get($preset1, 'height' );
+				letter-spacing: map-get($preset1, 'spacing' );
+				font-weight: map-get($preset1, 'weight' );
+			}
+			hr{background-color: red;width: 50%; color: green;}
+			.total_repayment{
+				color: $white;
+				font-size: map-get($preset2, 'size' );
+				line-height: map-get($preset2, 'height' );
+				letter-spacing: map-get($preset2, 'spacing' );
+				font-weight: map-get($preset2, 'weight' );
+			}
 		}
 
 	}
