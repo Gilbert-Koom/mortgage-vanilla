@@ -84,6 +84,10 @@ input[type="number"]{
 	border-color: $slate-500;
 }
 
+label:has(input[type="radio"]:checked){
+	background-color: rgba(216, 219, 47, 0.15);
+}
+
 .second_button{
 	height: 56px;
 	border-radius: 996px;
