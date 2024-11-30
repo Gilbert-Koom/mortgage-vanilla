@@ -6,6 +6,8 @@ function calculator() {
 	const interestRate=document.getElementById('interest').value;
 	const mRepayment=document.getElementById('monthly_repayment');
 	const tRepayment=document.getElementById('total_repayment');
+	const line=document.getElementById('hr');
+	const mon=document.getElementById('mon');
 
 	if (mortgageType.value==='repayment'){
 		const loanAmount=Number(mortgageAmount)
@@ -31,7 +33,9 @@ function calculator() {
 }
 else{
 	const interestonly=(Number(mortgageAmount)*Number(mortgageTerm)*Number(interestRate))/100
-	mRepayment.textContent=''
+	mRepayment.style.display='none'
+	mon.textContent=''
+	line.style.display='none'
 	tRepayment.textContent=interestonly
 	tRepayment.scrollIntoView()
 

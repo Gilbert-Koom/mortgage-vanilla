@@ -90,6 +90,10 @@ input[type="number"]{
 	
 }
 
+input[type="number"]:focus{
+	border-color: $lime;
+}
+
 input[type="number"]:focus +p{
 	background-color: $lime;
 }
@@ -207,7 +211,6 @@ input[type="radio"]{
 				letter-spacing: map-get($preset1, 'spacing' );
 				font-weight: map-get($preset1, 'weight' );
 			}
-			hr{background-color: red;width: 50%; color: green;}
 			.total_repayment{
 				color: $white;
 				font-size: map-get($preset2, 'size' );
@@ -329,6 +332,15 @@ label{
 	img{
 		margin: auto;
 	}
+}
+
+.monthly_repayment::before{
+	content: "\20AC";
+	margin-right: 5px;
+}
+
+.total_repayment::before{
+	content: "\20AC";
 }
 
 

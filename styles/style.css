@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -36,6 +37,10 @@ input[type=number] {
   line-height: 150%;
   letter-spacing: 0px;
   font-weight: 500;
+}
+
+input[type=number]:focus {
+  border-color: #d8db2f;
 }
 
 input[type=number]:focus + p {
@@ -144,11 +149,6 @@ input[type=radio] {
   line-height: 125%;
   letter-spacing: -1px;
   font-weight: bold;
-}
-.mainContainer .result_container .calculated_results hr {
-  background-color: red;
-  width: 50%;
-  color: green;
 }
 .mainContainer .result_container .calculated_results .total_repayment {
   color: #ffffff;
@@ -265,6 +265,15 @@ label {
 }
 .no3 p img {
   margin: auto;
+}
+
+.monthly_repayment::before {
+  content: "€";
+  margin-right: 5px;
+}
+
+.total_repayment::before {
+  content: "€";
 }
 
 @media (min-width: 950px) {
