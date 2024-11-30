@@ -55,7 +55,7 @@ function formValidator() {
 		isValid = false;
 	}
 	if (!mortgageType) {
-		mortgageTypeError.textContent = 'Please select a mortgage type.';
+		mortgageTypeError.textContent = 'This field is required';
 		isValid = false;
 	}
 
