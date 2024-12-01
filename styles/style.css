@@ -28,6 +28,14 @@ body {
   width: 100%;
 }
 
+.titleAndButton {
+  margin-bottom: 20px;
+}
+.titleAndButton h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 input[type=number] {
   width: 100%;
   height: 48px;
@@ -37,6 +45,12 @@ input[type=number] {
   line-height: 150%;
   letter-spacing: 0px;
   font-weight: 500;
+  margin: auto;
+}
+
+.label {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 input[type=number]:focus {
@@ -69,6 +83,7 @@ input[type=radio] {
   line-height: 125%;
   letter-spacing: -1px;
   font-weight: bold;
+  margin: 20px 0 20px 0;
 }
 
 .error {
@@ -97,8 +112,14 @@ input[type=radio] {
   color: #133041;
 }
 
+label, input[type=number] {
+  border-radius: 5px;
+}
+
 .mainContainer {
   background-color: #133041;
+  padding-top: 30px;
+  padding-bottom: 5%;
 }
 .mainContainer .initial-container .p1 {
   color: #ffffff;
@@ -108,6 +129,8 @@ input[type=radio] {
   font-weight: bold;
 }
 .mainContainer .initial-container .p2 {
+  width: 80%;
+  margin: auto;
   color: #9abed5;
   font-size: 16px;
   line-height: 150%;
@@ -115,11 +138,13 @@ input[type=radio] {
   font-weight: 500;
 }
 .mainContainer .result_container .firstp {
+  margin-bottom: 20px;
   color: white;
   font-size: 24px;
   line-height: 125%;
   letter-spacing: -1px;
   font-weight: bold;
+  margin-left: 25px;
 }
 .mainContainer .result_container .secondp {
   color: #9abed5;
@@ -127,8 +152,13 @@ input[type=radio] {
   line-height: 150%;
   letter-spacing: 0px;
   font-weight: 500;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 20px;
 }
 .mainContainer .result_container .calculated_results {
+  width: 90%;
+  margin: auto;
   background-color: hsla(0, 0%, 0%, 0.25);
   border-radius: 8px;
   box-shadow: 0px -11px 0px 0px #d8db2f;
@@ -201,6 +231,7 @@ label {
 
 .no1 input {
   padding-left: 80px;
+  width: 100%;
 }
 
 .no1 p {
@@ -276,17 +307,31 @@ label {
 }
 
 @media (min-width: 750px) {
-  .form-and-other {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  body {
+    background-color: #e4f4fd;
   }
-  #mortgage-type {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  form {
+    background-color: white;
+    width: 95%;
+    margin: auto;
+  }
+  form .same-group div {
+    width: 90%;
+    margin: auto;
   }
   .titleAndButton {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .titleAndButton h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .form-and-other {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }/*# sourceMappingURL=style.css.map */

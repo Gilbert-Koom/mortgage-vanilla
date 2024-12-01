@@ -77,6 +77,13 @@ body{
 	width: 100%;
 
 }
+.titleAndButton{
+	h1{
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	margin-bottom: 20px;
+}
 
 input[type="number"]{
 	width: 100%;
@@ -87,9 +94,14 @@ input[type="number"]{
 	line-height: map-get($preset4, 'height' );
 	letter-spacing: map-get($preset4, 'spacing' );
 	font-weight: map-get($preset4, 'weight' );
+	margin: auto;
 	
 }
 
+.label{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
 input[type="number"]:focus{
 	border-color: $lime;
 }
@@ -121,6 +133,7 @@ input[type="radio"]{
 	line-height: map-get($preset3, 'height' );
 	letter-spacing: map-get($preset3, 'spacing' );
 	font-weight: map-get($preset3, 'weight' );
+	margin: 20px 0 20px 0;
 }
 .error{
 	display: block;
@@ -153,9 +166,14 @@ input[type="radio"]{
 
 
 }
+label,input[type='number']{
+	border-radius: 5px;
+}
 
 .mainContainer{
 	background-color: $slate-900;
+	padding-top: 30px;
+	padding-bottom: 5%;
 	.initial-container{
 		.p1{
 			color: #ffffff;
@@ -167,6 +185,8 @@ input[type="radio"]{
 
 		}
 		.p2{
+			width: 80%;
+			margin: auto;
 			color: $slate-300;
 			font-size: map-get($preset4, 'size' );
 			line-height: map-get($preset4, 'height' );
@@ -176,11 +196,13 @@ input[type="radio"]{
 	}
 	.result_container{
 		.firstp{
+			margin-bottom: 20px;
 			color: white;
 			font-size: map-get($preset2, 'size' );
 			line-height: map-get($preset2, 'height' );
 			letter-spacing: map-get($preset2, 'spacing' );
 			font-weight: map-get($preset2, 'weight' );
+			margin-left: 25px;
 		}
 		.secondp{
 			color: $slate-300;
@@ -188,9 +210,14 @@ input[type="radio"]{
 			line-height: map-get($preset4, 'height' );
 			letter-spacing: map-get($preset4, 'spacing' );
 			font-weight: map-get($preset4, 'weight' );
+			margin-left: 25px;
+			margin-right: 25px;
+			margin-bottom: 20px;
 
 		}
 		.calculated_results{
+			width: 90%;
+			margin: auto;
 			background-color: hsla(0, 0%, 0%, 0.25);
 			border-radius: 8px;
 			box-shadow: 0px -11px 0px 0px $lime;
@@ -269,6 +296,7 @@ label{
 
 .no1 input {
 	padding-left: 80px;
+	width: 100%;
 }
 
 .no1 p {
@@ -343,19 +371,38 @@ label{
 	content: "\20AC";
 }
 
-
-@media (min-width: 750px) {
-	.form-and-other{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+@media (min-width: 750px){
+	body{
+		background-color: $slate-100;
 	}
-	#mortgage-type{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+	form{
+		background-color: white;
+		width: 95%;
+		margin: auto;
+		.same-group{
+			div{
+				width: 90%;
+				margin: auto;
+			}
+		}
 	}
+	
 	.titleAndButton{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		h1{
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+	}
+
+}
+
+//for desktop design
+@media (min-width: 1000px) {
+	.form-and-other{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 	}
 }
