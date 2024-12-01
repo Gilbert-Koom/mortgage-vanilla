@@ -8,6 +8,7 @@ function calculator() {
 	const tRepayment=document.getElementById('total_repayment');
 	const line=document.getElementById('hr');
 	const mon=document.getElementById('mon');
+	const time=document.getElementById('over');
 
 	if (mortgageType.value==='repayment'){
 		const loanAmount=Number(mortgageAmount)
@@ -33,7 +34,7 @@ function calculator() {
 }
 else{
 	const interestonly=(Number(mortgageAmount)*Number(mortgageTerm)*Number(interestRate))/100
-	mRepayment.style.display='none'
+	mRepayment.textContent=''
 	mon.textContent=''
 	line.style.display='none'
 	tRepayment.textContent=interestonly

@@ -89,10 +89,9 @@ input[type=radio] {
   line-height: 150%;
   letter-spacing: 0px;
   font-weight: 500;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border: none;
   background-color: transparent;
+  text-decoration: underline;
 }
 #myForm .first_button:hover {
   color: #133041;
@@ -276,7 +275,7 @@ label {
   content: "€";
 }
 
-@media (min-width: 950px) {
+@media (min-width: 750px) {
   .form-and-other {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -286,7 +285,8 @@ label {
     grid-template-columns: 1fr 1fr;
   }
   .titleAndButton {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
