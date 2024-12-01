@@ -383,12 +383,30 @@ label {
     margin-bottom: 30px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1440px) {
+  .app {
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 50%;
+  }
   .form-and-other {
     display: grid;
+    width: 70%;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
     grid-template-columns: 1fr 1fr;
+    background-color: #ffffff;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   .form-and-other .mainContainer {
     height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 15%;
+    border-top-right-radius: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
