@@ -22,32 +22,35 @@
 				
 				<div class="same-group">
 					<div class="form-control" id="first">
-						<label for="mortgage-amount" class="label">Mortgage Amount</label>
+						<label for="mortgage-amount" class="label" id="amount-label">Mortgage Amount</label>
 						<div class="no1">
 							<input type="number" id="amount" name="firstNumber" step="any">
 							<p id="amountbg"><img src="images/Prefix.png" alt=""></p>
 						</div>
 						<small class="error" id="amount-error"></small>
 					</div>
-					<div class="form-control" id="second">
-						<label for="mortgage-term" class="label">Mortgage Term</label>
-						<div class="no2">
-							<input type="number" id="term" name="lastNumber" step="any">
-							<p id="termbg"><img src="images/Suffix (1).png" alt=""></p>
+					<div class="grid">
+						<div class="form-control" id="second">
+							<label for="mortgage-term" class="label" id="term-label">Mortgage Term</label>
+							<div class="no2">
+								<input type="number" id="term" name="lastNumber" step="any">
+								<p id="termbg"><img src="images/Suffix (1).png" alt=""></p>
+							</div>
+							<small class="error" id="term-error"></small>
 						</div>
-						<small class="error" id="term-error"></small>
-					</div>
-					<div class="form-control" id="third">
-						<label for="lastName" class="label">Interest Rate</label>
-						<div class="no3">
-							<input type="number" id="interest" name="lastNumber" step="any">
-							<p id="interestbg"><img src="images/Suffix.png" alt=""></p>
+						<div class="form-control" id="third">
+							<label for="lastName" class="label" id="interest-label">Interest Rate</label>
+							<div class="no3">
+								<input type="number" id="interest" name="lastNumber" step="any">
+								<p id="interestbg"><img src="images/Suffix.png" alt=""></p>
+							</div>
+							<small class="error" id="interest-error"></small>
 						</div>
-						<small class="error" id="interest-error"></small>
 					</div>
+					
 				</div>
 				<div class="form-control" id="mortgage-types">
-					<label>Mortgage Type</label>
+					<label class="type-label">Mortgage Type</label>
 					<div id='mortgage-type'>
 						<label class="has-solid-border" id="solid-1">
 							<input type="radio" name="type_of_mortgage" value="repayment">Repayment

@@ -375,19 +375,36 @@ label{
 	body{
 		background-color: $slate-100;
 	}
+	.form-and-other{
+		#type-error{
+			margin-left: 5%;
+		}
+	}
 	form{
 		background-color: white;
 		width: 95%;
+		padding-bottom: 35px;
 		margin: auto;
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
 		.same-group{
 			div{
-				width: 90%;
+				width: 94%;
+				outline: 5px;
 				margin: auto;
+			}
+			#first{
+				width: 90%;
 			}
 		}
 	}
 	
 	.titleAndButton{
+		width: 90%;
+		margin: auto;
+		margin-top: 25px;
+		margin-bottom: 20px;
+		padding-top: 20px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -396,6 +413,49 @@ label{
 			margin-top: 0;
 		}
 	}
+	.label{
+		margin-left: -20px;
+	}
+	.grid{
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+	.has-solid-border{
+		margin: auto;
+		margin-bottom: 13px;
+	}
+	.type-label{
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.second_button{
+		width: 50%;
+		margin-left: 5%;
+		margin-top: 25px;
+		
+	}
+	.form-control{
+		label{
+			margin-left: 5%;
+		}
+	}
+	#amount-label{
+		margin-left: 0px;
+	}
+	#term-label{
+		margin-left: 0px;
+	}
+	#interest-label{
+		margin-left: 0;
+	}
+	.mainContainer{
+	width: 95%;
+	margin: auto;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	margin-bottom: 30px;
+
+}
 
 }
 
@@ -404,5 +464,8 @@ label{
 	.form-and-other{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		.mainContainer{
+			height: 100%;
+		}
 	}
 }
